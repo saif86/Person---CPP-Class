@@ -92,7 +92,10 @@ void Person::SetLastName(const string& aLastName) {
 
 // function that sets Zip Code
 void Person::SetZIPCode(int aZIPCode) {
-	this->mZIPCode = aZIPCode;
+	if (aZIPCode < 0)
+		cout << "Error: Incorrect Zip code." << endl;
+	else
+		this->mZIPCode = aZIPCode;
 }
 // end function SetZIPCode
 
