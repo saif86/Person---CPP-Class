@@ -19,6 +19,11 @@ public:
 	/** Default + Overloaded constructor.
 	*/
 	Person(const string& = "X", const string& = "X",  int = 0);
+	
+	// Use compiler-generated copy constructor, assignment, and destructor.
+	// Person(const Person&);
+	// Person& operator=(const Person&);
+	// ~Person();
 
 // OPERATIONS
 	/** function that displays the Person.
